@@ -1,0 +1,11 @@
+apiVersion: "nuclio.io/v1"
+kind: NuclioFunction
+metadata:
+  name: temperature-function
+  namespace: nuclio
+spec:
+  description: Converts Fahrenheit to Celsius and the opposite
+  runtime: "python:3.6"
+  handler: "temperature:handler"
+  minReplicas: 1
+  maxReplicas: 1

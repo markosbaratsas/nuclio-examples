@@ -1,0 +1,15 @@
+apiVersion: "nuclio.io/v1"
+kind: NuclioFunction
+metadata:
+  name: db-list-recipes-function
+  namespace: nuclio
+spec:
+  description: Lists all recipes that exist in the database
+  runtime: "python:3.6"
+  handler: "db-list-recipes:handler"
+  minReplicas: 1
+  maxReplicas: 1
+
+  build:
+    commands:
+    - "pip install psycopg2"

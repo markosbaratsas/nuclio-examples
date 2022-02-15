@@ -1,0 +1,15 @@
+apiVersion: "nuclio.io/v1"
+kind: NuclioFunction
+metadata:
+  name: db-add-recipe-function
+  namespace: nuclio
+spec:
+  description: Adds a recipe to the database
+  runtime: "python:3.6"
+  handler: "db-add-recipe:handler"
+  minReplicas: 1
+  maxReplicas: 1
+
+  build:
+    commands:
+    - "pip install psycopg2"

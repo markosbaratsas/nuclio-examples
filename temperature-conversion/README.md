@@ -7,7 +7,7 @@ This example demonstrates a Nuclio Function that accepts input in Celcius and re
 1. Execute the following command:
 ```
 sudo nuctl deploy \
-    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examlpes/temperature-conversion \
+    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examples/temperature-conversion \
     --registry $(minikube ip):5000 \
     --run-registry localhost:5000
 ```

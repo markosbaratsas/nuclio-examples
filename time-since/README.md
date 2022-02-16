@@ -7,7 +7,7 @@ This example demonstrates a Nuclio Function that returns how much time has passe
 1. Execute the following command:
 ```
 sudo nuctl deploy \
-    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examlpes/time-since \
+    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examples/time-since \
     --registry $(minikube ip):5000 \
     --run-registry localhost:5000
 ```

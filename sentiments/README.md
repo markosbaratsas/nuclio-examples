@@ -8,7 +8,7 @@ This example demonstrates a Nuclio Function that uses the [vaderSentiment](https
 1. Execute the following command:
 ```
 sudo nuctl deploy \
-    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examlpes/sentiments \
+    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examples/sentiments \
     --registry $(minikube ip):5000 \
     --run-registry localhost:5000
 ```

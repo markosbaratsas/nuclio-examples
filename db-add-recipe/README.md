@@ -8,7 +8,7 @@ This example demonstrates how to connect and add data to a database, using nucli
 2. Execute the following command:
 ```
 sudo nuctl deploy \
-    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examlpes/db-add-recipe \
+    --path PATH_TO_NUCLIO_EXAMPLES/nuclio-examples/db-add-recipe \
     --registry $(minikube ip):5000 \
     --run-registry localhost:5000 \
     --env db_host=DB_HOST \

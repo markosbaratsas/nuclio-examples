@@ -10,9 +10,9 @@ def handler(context, event):
     except:
         return "Please give the data in JSON format"
 
-    if converter == "FahrenheitToCelcius":
+    if converter == "FahrenheitToCelsius":
         ret = (value - 32) * 5.0/9.0
-    elif converter == "CelciusToFahrenheit":
+    elif converter == "CelsiusToFahrenheit":
         ret = 9.0/5.0 * value + 32
     else:
         ret = -123
